@@ -1,0 +1,6 @@
+# base gitignore 
+.vs/
+.idea/
+.vscode/
+bin/
+obj/
