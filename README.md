@@ -247,3 +247,37 @@ Worker — это “работник на фоне”.
             v
     [External sources]
 ```
+
+### Примерная структура проекта 
+
+``` 
+pika/
+│
+├─ src/
+│  │
+│  ├─ Pika.Desktop/          # Avalonia UI приложение
+│  │
+│  ├─ Pika.Api/              # ASP.NET Core API
+│  │
+│  ├─ Pika.Worker/           # Background worker
+│  │
+│  ├─ Pika.Core/             # Domain + application logic
+│  │
+│  ├─ Pika.Infrastructure/   # Database, HTTP, кеш, файловая система
+│  │
+│  └─ Pika.Connectors/       # Источники (парсеры сайтов)
+│
+├─ docs/
+│  └─ ai/
+│     ├─ project-context.md
+│     └─ current-status.md
+│
+├─ tests/
+│  ├─ Pika.Core.Tests/
+│  ├─ Pika.Api.Tests/
+│  └─ Pika.Connectors.Tests/
+│
+├─ .gitignore
+├─ README.md
+└─ pika.sln
+```
