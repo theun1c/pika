@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pika.Desktop", "src\Pika.Desktop\Pika.Desktop.csproj", "{4D845FC4-7E0B-4214-9B01-5BBA6F43B973}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pika.Api", "src\Pika.Api\Pika.Api.csproj", "{FE0ED147-1629-4380-AD32-FA942E059492}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,9 +12,5 @@ Global
 		{4D845FC4-7E0B-4214-9B01-5BBA6F43B973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D845FC4-7E0B-4214-9B01-5BBA6F43B973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D845FC4-7E0B-4214-9B01-5BBA6F43B973}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE0ED147-1629-4380-AD32-FA942E059492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE0ED147-1629-4380-AD32-FA942E059492}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE0ED147-1629-4380-AD32-FA942E059492}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE0ED147-1629-4380-AD32-FA942E059492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
