@@ -1,0 +1,15 @@
+info:
+  name: jikan-get-anime-full
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://api.jikan.moe/v4/anime/1/full
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
