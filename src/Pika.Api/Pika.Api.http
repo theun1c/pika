@@ -1,6 +1,0 @@
-@Pika.Api_HostAddress = http://localhost:5097
-
-GET {{Pika.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
