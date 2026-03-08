@@ -1,11 +1,11 @@
 info:
-  name: jikan-get-anime-by-id
+  name: get-anime-full
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: GET
-  url: https://api.jikan.moe/v4/anime/1
+  url: https://api.jikan.moe/v4/anime/1/full
   auth: inherit
 
 settings:
