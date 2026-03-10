@@ -63,12 +63,13 @@ Pika — это не просто парсер сайтов, а **платфор
 
 ---
 
-# ⚡ Pika
+## 📄 License
 
-> I hope I don't give up on the project.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
 ---
 
-# Develop part (just for me)
+# 🖥️ Develop part (just for me)
 
 Приложение должно делать 2 вещи:
 1. Каталог
