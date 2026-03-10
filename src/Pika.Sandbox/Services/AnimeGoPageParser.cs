@@ -1,12 +1,13 @@
 using System.Runtime.InteropServices.ComTypes;
 using System.Xml;
 using Microsoft.Playwright;
+using Pika.Sandbox.Contracts.Requests;
 
-namespace Pika.Sandbox.Models;
+namespace Pika.Sandbox.Services;
 
 public class AnimeGoPageParser
 {
-    public async Task<PageParseResult> ParseAsync(string url)
+    public async Task<PlaybackRequest> ParseAsync(string url)
     {
         using var playwright = await Playwright.CreateAsync();
 
@@ -33,6 +34,6 @@ public class AnimeGoPageParser
         
         Console.WriteLine($"URL: {m3u8}");
         
-        return new PageParseResult(m3u8);
+        return new PlaybackRequest(m3u8);
     }
 }
