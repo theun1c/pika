@@ -1,8 +1,11 @@
+using Pika.Sandbox.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<AnimeGoPageParser>();
 
 var app = builder.Build();
 
@@ -13,5 +16,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.MapGet("/parse", async (string url, AnimeGoPageParser parser) =>
+{
+    var result = await parser.ParseAsync(url);
+    return Results.Ok(result);
+});
 
 app.Run();
