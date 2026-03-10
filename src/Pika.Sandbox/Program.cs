@@ -1,4 +1,4 @@
-using Pika.Sandbox.Models;
+using Pika.Sandbox.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
