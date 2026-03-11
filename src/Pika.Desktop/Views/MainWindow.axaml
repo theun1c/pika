@@ -9,9 +9,4 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="Pika.Desktop">
 
-    <Design.DataContext>
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
-    
-    
 </Window>
