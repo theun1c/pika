@@ -38,8 +38,8 @@ public sealed class MpvCore : IDisposable
             throw new InvalidOperationException("call initialize first");
         
         // проверка на пустую строку
-        if(string.IsNullOrEmpty(source))
-            throw new ArgumentNullException("source is empty",nameof(source));
+        if(string.IsNullOrWhiteSpace(source))
+            throw new ArgumentException("source is empty",nameof(source));
         
         // экранируем кавычки
         var escaped = source.Replace("\"","\\\"");
