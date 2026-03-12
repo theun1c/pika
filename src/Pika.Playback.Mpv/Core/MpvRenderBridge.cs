@@ -243,7 +243,7 @@ public class MpvRenderBridge : IDisposable
     private void ThrowIfDisposed()
     {
         if (_isDisposed)
-            throw new ObjectDisposedException(nameof(MpvCore));
+            throw new ObjectDisposedException(nameof(MpvRenderBridge));
     }
     
     // helper: кладем структуру в анманеджет память
