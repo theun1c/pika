@@ -1,6 +1,7 @@
-﻿namespace Pika.Desktop.ViewModels;
+﻿
+namespace Pika.Desktop.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    public string Greeting { get; } = "Welcome to Avalonia!";
+    
 }
