@@ -164,6 +164,17 @@ Background service.
 
 ---
 
+## Playback (new)
+
+В качестве playback из-за невозможности использовать готовые решения по типу VLCSharp и прочих, 
+была добавлена собственная интеграция mpv плеера через libmpv бекенд. 
+
+- playback backend выбран: libmpv
+- интеграция через Render API (OpenGL)
+- реализация разделена на Interop/Core/RenderBridge/UI control
+
+---
+
 # Domain Model (предварительный)
 
 Сущности пока не финализированы.
@@ -178,6 +189,10 @@ EpisodeOffer
 WatchHistory
 
 Финальная Domain model будет определена **после исследования источников**.
+
+
+
+
 
 ---
 
