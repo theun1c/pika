@@ -274,8 +274,10 @@ pika/
 │  │
 │  ├─ Pika.Connectors/       # Источники (парсеры сайтов)
 │  │
-│  └─ Pika.Sandbox/          # Проект для тестов (полигон)
-│
+│  ├─ Pika.Sandbox/          # Проект для тестов (полигон)
+│  │
+│  └─ Pika.Playback.Mpv/     # Проект для интеграции бекенда libmpv
+│ 
 ├─ docs/
 │  └─ ai/
 │     ├─ project-context.md
