@@ -91,14 +91,14 @@ public sealed class MpvCore : IDisposable
     }
 
     // метод для ошибок
-    private void ThrowIfMpvError(int code, string opetarion)
+    private void ThrowIfMpvError(int code, string operation)
     {
         if (code >= 0) return;
 
         var errorPtr = MpvNative.mpv_error_string(code);
         var errorText = Marshal.PtrToStringUTF8(errorPtr) ?? $"unknown mpv error {code}";
         
-        throw new InvalidOperationException($"{opetarion} failed: {errorText} ({code})"); 
+        throw new InvalidOperationException($"{operation} failed: {errorText} ({code})"); 
     }
     
     // метод если уже освобожден
