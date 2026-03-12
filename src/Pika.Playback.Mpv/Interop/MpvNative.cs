@@ -55,6 +55,10 @@ internal static partial class MpvNative
     [UnmanagedCallConv(CallConvs = [typeof(CallConvCdecl)])]
     internal static partial void mpv_render_context_free(nint renderContext);
     
+    [LibraryImport("libmpv.so.2")]
+    [UnmanagedCallConv(CallConvs = [typeof(CallConvCdecl)])]
+    internal static partial void mpv_render_context_set_update_callback(nint renderContext, nint callback, nint callbackContext);
+    
     // FROM /usr/include/mpv/client.h
     [LibraryImport("libmpv.so.2")]
     [UnmanagedCallConv(CallConvs = [typeof(CallConvCdecl)])]
