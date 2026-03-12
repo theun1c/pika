@@ -26,7 +26,7 @@ internal static partial class MpvNative
     internal struct MpvOpenGlInitParams
     {
         public nint GetProcAddress;
-        public nint GetProcAdressCtx;
+        public nint GetProcAddressCtx;
     }
 
     [StructLayout(LayoutKind.Sequential)]
