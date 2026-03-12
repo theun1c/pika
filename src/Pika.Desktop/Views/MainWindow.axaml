@@ -7,6 +7,10 @@
         x:Class="Pika.Desktop.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Pika.Desktop">
+        Title="Pika.Desktop"
+        xmlns:controls="using:Pika.Desktop.Controls">
 
+        <Grid>
+                <controls:VideoGlControl x:Name="PlayerControl"/>
+        </Grid>
 </Window>
