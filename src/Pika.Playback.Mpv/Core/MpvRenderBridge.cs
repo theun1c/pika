@@ -152,7 +152,7 @@ public class MpvRenderBridge : IDisposable
             fboPtr = AllocStruct(fbo);
 
             // если видео будет перевернуто, поставить 1
-            var flipY = 0;
+            var flipY = 1;
             flipYPtr = AllocStruct(flipY);
 
             // параметры для mpv_render_context_render()
